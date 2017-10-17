@@ -3,6 +3,24 @@ session_start();
 if (!empty($_POST['loginname'])) {
     $_SESSION['loginname'] = $_POST['loginname'];
 }
+
+$total = 0;
+
+if (!empty($_COOKIE['cookie1'])) {
+    $total += $_COOKIE['cookie1'];
+}
+
+if (!empty($_COOKIE['cookie2'])) {
+    $total += $_COOKIE['cookie2'];
+}
+
+if (!empty($_COOKIE['cookie4'])) {
+    $total += $_COOKIE['cookie4'];
+}
+
+if (!empty($_COOKIE['cookie4'])) {
+    $total += $_COOKIE['cookie4'];
+}
 ?>
 
 <!DOCTYPE html>
@@ -43,7 +61,7 @@ if (!empty($_POST['loginname'])) {
           <li>
             <a href="/cart.php" class="btn btn-warning navbar-btn">
               <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-              <?= ($_COOKIE['cookie1'] + $_COOKIE['cookie2'] + $_COOKIE['cookie3'] + $_COOKIE['cookie4']) ?? 0 ?>
+              <?= $total ?? 0 ?>
             </a>
           </li>
         </ul>

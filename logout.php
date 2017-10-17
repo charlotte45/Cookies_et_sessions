@@ -6,10 +6,10 @@
  * Time: 10:31
  */
 
-setcookie('cookie1', "0", -3600);
-setcookie('cookie2', "0", -3600);
-setcookie('cookie3', "0", -3600);
-setcookie('cookie4', "0", -3600);
+setcookie('cookie1', "", -1);
+setcookie('cookie2', "", -1);
+setcookie('cookie3', "", -1);
+setcookie('cookie4', "", -1);
 
 session_start();
 $_SESSION["loginname"] = NULL;

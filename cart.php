@@ -36,7 +36,7 @@ if(empty($_SESSION['loginname'])) {
                 ?>
             </div>
             <div class="row">
-                <h3>Total: <?= ($_COOKIE['cookie1'] + $_COOKIE['cookie2'] + $_COOKIE['cookie3'] + $_COOKIE['cookie4']) ?? 0 ?></h3>
+                <h3>Total: <?= $total ?? 0 ?></h3>
             </div>
         </div>
     </div>
